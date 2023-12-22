@@ -1,13 +1,16 @@
 <template>
-  <div class="task-item">
-    <label :for="checkboxId">
+  <div class="flex items-center justify-between p-3 border-b border-gray-300-item">
+    <label :for="checkboxId" class="flex items-center">
       <input
         type="checkbox"
         :id="checkboxId"
+        class="mr-2 h-5 w-5"
         :checked="localTask.completed"
         @change="handleToggle"
       />
-      {{ task.title }}
+      <button class="bg-red-500 text-white p-2 rounded hover:bg-red-600" @click="handleRemove">
+        Remove
+      </button>
     </label>
     <button @click="handleRemove">Remove</button>
   </div>

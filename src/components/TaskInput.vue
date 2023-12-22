@@ -1,9 +1,10 @@
 <template>
-  <div class="task-input">
+  <div class="p-4">
     <label for="new-task" class="sr-only">
       New Task
       <input
         id="new-task"
+        class="p-2 border border-gray-300 rounded w-full"
         type="text"
         placeholder="Enter a new task..."
         v-model="newTaskTitle"

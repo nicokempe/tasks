@@ -1,5 +1,5 @@
 <template>
-  <div class="app-container">
+  <div class="flex flex-col items-center justify-center min-h-screen py-5">
     <task-input @addTask="addTask" />
     <task-list :tasks="tasks" @toggleTask="toggleTask" @removeTask="removeTask" />
   </div>
@@ -64,8 +64,14 @@ export default defineComponent({
 });
 </script>
 
-<style scoped>
+<style>
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
 </style>
