@@ -1,6 +1,12 @@
 {
   "name": "tasks",
-  "version": "0.1.0",
+  "version": "v2023.12.1-dev",
+  "description": "Minimal Task Manager",
+    "author": {
+      "name": "Nico Kempe",
+      "email": "kontakt@nicokempe.de",
+      "url": "https://www.nicokempe.de/"
+    },
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
